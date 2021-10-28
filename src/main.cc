@@ -1,3 +1,6 @@
+#include <unistd.h>
+#include <cstring>
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -79,18 +82,6 @@ int main(int argc, const char *argv[]) {
     project_status = GetGitStatus(project_path);
   };
   Menu(&project_names, &menu_idx, menu_option);
-
-
-  auto status_renderer = Renderer([&]() -> Element {
-    
-
-
-  });
-
-
-
-
-
 
 
 

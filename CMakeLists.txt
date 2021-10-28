@@ -5,5 +5,5 @@ project(cmake-tree LANGUAGES CXX)
 add_subdirectory(3rd)
 
 add_executable(cmake-tree src/main.cc)
-target_link_libraries(cmake-tree screen dom component subprocess)
+target_link_libraries(cmake-tree PRIVATE screen dom component subprocess)
 
